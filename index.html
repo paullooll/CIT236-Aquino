@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+    <h1>Listen Songs here for Free</h1>
+    <a href="#" class="btn">Get Started</a>
+    <h2>Featured Songs</h2>
+    <div class="song">
+      <img src="assets/images/song1.jfif" alt="Song 1">
+      <h3>Cupid</h3>
+      <p>Fifty Fifty</p>
+      <br>
+      <button onclick ="music1.play()" class="but">PLAY</button>
+      <button onclick="music1.pause()" class="but">PAUSE</button>
+      </div>
+    <div class="song">
+      <img src="assets/images/song2.png" alt="Song 2">
+      <h3>Paint The Town Red</h3>
+      <p>Doja Cat</p>
+      <br>
+      <button onclick ="music2.play()" class="but">PLAY</button>
+      <button onclick="music2.pause()" class="but">PAUSE</button>
+    </div>
+    <div class="song">
+      <img src="assets/images/song3.jpg" alt="Song 3">
+      <h3>Raining in Manila</h3>
+      <p>Lola Amour</p>
+      <br>
+      <button onclick ="music3.play()" class="but">PLAY</button>
+      <button onclick="music3.pause()" class="but">PAUSE</button>
+    </div>
+    <div class="song">
+      <img src="assets/images/song4.jpeg" alt="Song 4">
+      <h3>Seven (Explicit Version)</h3>
+      <p>Jung Kook (feat. Latto)</p>
+      <br>
+      <button onclick ="music4.play()" class="but">PLAY</button>
+      <button onclick="music4.pause()" class="but">PAUSE</button>
+    </div>
+    <div class="song">
+      <img src="assets/images/song 5.jpg" alt="Song 5">
+      <h3>Tip Toe</h3>
+      <p>HYBS</p>
+      <br>
+      <button onclick ="music5.play()" class="but">PLAY</button>
+      <button onclick="music5.pause()" class="but">PAUSE</button>
+    </div>
+    <div class="song">
+      <img src="assets/images/song6.jfif" alt="Song 6">
+      <h3>light</h3>
+      <p>wave to earth</p>
+      <br>
+      <button onclick ="music6.play()" class="but">PLAY</button>
+      <button onclick="music6.pause()" class="but">PAUSE</button>
+    </div>
+    <div class="song">
+      <img src="assets/images/song7.png" alt="Song 7">
+      <h3>All We Know</h3>
+      <p>The Chainsmokers</p>
+      <br>
+      <button onclick ="music7.play()" class="but">PLAY</button>
+      <button onclick="music7.pause()" class="but">PAUSE</button>
+    </div>
+    <div class="song">
+      <img src="assets/images/song8.jpg" alt="Song 8">
+      <h3>Social Path</h3>
+      <p>Stray Kids (feat LiSA)</p>
+      <br>
+      <button onclick ="music8.play()" class="but">PLAY</button>
+      <button onclick="music8.pause()" class="but">PAUSE</button>
+    </div>
+    <div class="song">
+      <img src="assets/images/song9.jpg" alt="Song 9">
+      <h3>drunk</h3>
+      <p>keshi</p>
+      <br>
+      <button onclick ="music9.play()" class="but">PLAY</button>
+      <button onclick="music9.pause()" class="but">PAUSE</button>
+    </div>
+    <div class="song">
+      <img src="assets/images/song10.jfif" alt="Song 10">
+      <h3>Dekada 70</h3>
+      <p>Zild</p>
+      <br>
+      <button onclick ="music10.play()" class="but">PLAY</button>
+      <button onclick="music10.pause()" class="but">PAUSE</button>
+    </div>
+
+    <h2>Featured Artists</h2>
+    <div class="artist">
+      <img src="assets/images/artist1.jpg" alt="Artist 1">
+      <h3> Snoop Dogg</h3>
+    </div>
+    <div class="artist">
+      <img src="assets/images/artist2.jpg" alt="Artist 2">
+      <h3>Taylor Swift</h3>
+    </div>
+    <div class="artist">
+      <img src="assets/images/artist3.jpeg" alt="Artist 3">
+      <h3>Kiyo</h3>
+    </div>
+    <div class="artist">
+      <img src="assets/images/artist4.jfif" alt="Artist 3">
+      <h3>Yoasobi</h3>
+    </div>
+
+
+
+      <h2>Play Music Videos</h2>
+    <div class="song-playing">
+      <div class="song-playing-container">
+        <video src="assets/video/mv1.mp4" controls></video>
+        <div class="song-details">
+          <h2>Super Shy</h2>
+          <div class="song-details-inner">
+            <h3>Artist:</h3>
+            <p>New Jeans</p>
+          </div>
+        </div>
+      </div>
+      <div class="song-playing-container">
+        <video src="assets/video/mv2.mp4" controls></video>
+        <div class="song-details">
+          <h2>golden hour</h2>
+          <div class="song-details-inner">
+            <h3>Artist:</h3>
+            <p>JVKE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <footer>
+    &copy; 2023 Free Music. All rights reserved.
+  </footer>
+  <script>
+    var music1 = new Audio();
+    music1.src = "assets/songs/song1.m4a";
+
+    var music2 = new Audio();
+    music2.src = "assets/songs/song2.m4a";
+
+    var music3 = new Audio();
+    music3.src = "assets/songs/song3.m4a";
+
+    var music4 = new Audio();
+    music4.src = "assets/songs/song4.m4a";
+
+    var music5 = new Audio();
+    music5.src = "assets/songs/song5.m4a";
+
+    var music6 = new Audio();
+    music6.src = "assets/songs/song6.m4a";
+
+    var music7 = new Audio();
+    music7.src = "assets/songs/song7.m4a";
+
+    var music8 = new Audio();
+    music8.src = "assets/songs/song8.m4a";
+
+    var music9 = new Audio();
+    music9.src = "assets/songs/song9.m4a";
+
+    var music10 = new Audio();
+    music10.src = "assets/songs/song10.m4a";
+  </script>
+</body>
+</html>
