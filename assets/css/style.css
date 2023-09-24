@@ -1,5 +1,5 @@
 /* Reset default margin and padding */
-body, h1, h2, h3, p, ul, li {
+body, h1, h2, h3, p, {
   margin: 0;
   padding: 0;
 }
@@ -59,7 +59,6 @@ h1 {
   height: 100%;
   text-align: center;
   margin-top: 5%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
