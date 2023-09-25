@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pekeng Spotify</title>
-  <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+  <title>Music</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -11,142 +10,156 @@
   <script src="app.js"></script>
     <h1>Listen Songs here for Free</h1>
     <a href="#" class="btn">Get Started</a>
-    <h2>Featured Songs</h2>
+    <h2>Featured Songs</h2> 
     <div class="song">
       <img src="assets/images/song1.jfif" alt="Song 1">
       <h3>Cupid</h3>
       <p>Fifty Fifty</p>
+      <audio id="aud1" src="assets/songs/song1.m4a"></audio>
       <br>
-      <button onclick ="music1.play()" class="but">PLAY</button>
-      <button onclick="music1.pause()" class="but">PAUSE</button>
+      <button class="but" id="play1">PLAY</button>
+      <button onclick="audio1.pause()" class="but">PAUSE</button>
       </div>
     <div class="song">
       <img src="assets/images/song2.png" alt="Song 2">
       <h3>Paint The Town Red</h3>
       <p>Doja Cat</p>
+      <audio id="aud2" src="assets/songs/song2.m4a"></audio>
       <br>
-      <button onclick ="music2.play()" class="but">PLAY</button>
-      <button onclick="music2.pause()" class="but">PAUSE</button>
+      <button class="but" id="play2">PLAY</button>
+      <button onclick="audio2.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song3.jpg" alt="Song 3">
       <h3>Raining in Manila</h3>
       <p>Lola Amour</p>
+      <audio id="aud3" src="assets/songs/song3.m4a"></audio>
       <br>
-      <button onclick ="music3.play()" class="but">PLAY</button>
-      <button onclick="music3.pause()" class="but">PAUSE</button>
+      <button class="but" id="play3">PLAY</button>
+      <button onclick="audio3.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song4.jpeg" alt="Song 4">
       <h3>Seven (Explicit Version)</h3>
       <p>Jung Kook (feat. Latto)</p>
+      <audio id="aud4" src="assets/songs/song4.m4a"></audio>
       <br>
-      <button onclick ="music4.play()" class="but">PLAY</button>
-      <button onclick="music4.pause()" class="but">PAUSE</button>
+      <button class="but" id="play4">PLAY</button>
+      <button onclick="audio4.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song 5.jpg" alt="Song 5">
       <h3>Tip Toe</h3>
       <p>HYBS</p>
+      <audio id="aud5" src="assets/songs/song5.m4a"></audio>
       <br>
-      <button onclick ="music5.play()" class="but">PLAY</button>
-      <button onclick="music5.pause()" class="but">PAUSE</button>
+      <button class="but" id="play5">PLAY</button>
+      <button onclick="audio5.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song6.jfif" alt="Song 6">
       <h3>light</h3>
       <p>wave to earth</p>
+      <audio id="aud6" src="assets/songs/song6.m4a"></audio>
       <br>
-      <button onclick ="music6.play()" class="but">PLAY</button>
-      <button onclick="music6.pause()" class="but">PAUSE</button>
+      <button class="but" id="play6">PLAY</button>
+      <button onclick="audio6.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song7.png" alt="Song 7">
       <h3>All We Know</h3>
       <p>The Chainsmokers</p>
+      <audio id="aud7" src="assets/songs/song7.m4a"></audio>
       <br>
-      <button onclick ="music7.play()" class="but">PLAY</button>
-      <button onclick="music7.pause()" class="but">PAUSE</button>
+      <button class="but" id="play7">PLAY</button>
+      <button onclick="audio7.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song8.jpg" alt="Song 8">
       <h3>Social Path</h3>
       <p>Stray Kids (feat LiSA)</p>
+      <audio id="aud8" src="assets/songs/song8.m4a"></audio>
       <br>
-      <button onclick ="music8.play()" class="but">PLAY</button>
-      <button onclick="music8.pause()" class="but">PAUSE</button>
+      <button class="but" id="play8">PLAY</button>
+      <button onclick="audio8.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song9.jpg" alt="Song 9">
       <h3>drunk</h3>
       <p>keshi</p>
+      <audio id="aud9" src="assets/songs/song9.m4a"></audio>
       <br>
-      <button onclick ="music9.play()" class="but">PLAY</button>
-      <button onclick="music9.pause()" class="but">PAUSE</button>
+      <button class="but" id="play9">PLAY</button>
+      <button onclick="audio9.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song10.jfif" alt="Song 10">
       <h3>Dekada 70</h3>
       <p>Zild</p>
+      <audio id="aud10" src="assets/songs/song10.m4a"></audio>
       <br>
-      <button onclick ="music10.play()" class="but">PLAY</button>
-      <button onclick="music10.pause()" class="but">PAUSE</button>
+      <button class="but" id="play10">PLAY</button>
+      <button onclick="audio10.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song11.jpg" alt="Song 11">
       <h3>Guitars and Drugs</h3>
       <p>John K</p>
+      <audio id="aud11" src="assets/songs/song11.m4a"></audio>
       <br>
-      <button onclick ="music11.play()" class="but">PLAY</button>
-      <button onclick="music11.pause()" class="but">PAUSE</button>
+      <button class="but" id="play11">PLAY</button>
+      <button onclick="audio11.pause()" class="but">PAUSE</button>
     </div>
     <div class="song">
       <img src="assets/images/song12.jfif" alt="Song 12">
       <h3>NIGHT DANCER</h3>
       <p>imase</p>
+      <audio id="aud12" src="assets/songs/song12.m4a"></audio>
       <br>
-      <button onclick ="music12.play()" class="but">PLAY</button>
-      <button onclick="music12.pause()" class="but">PAUSE</button>
+      <button class="but" id="play12">PLAY</button>
+      <button onclick="audio12.pause()" class="but">PAUSE</button>
     </div>
 
-    <h2>Featured Artists</h2>
-    <div class="artist">
+    <h2>Artists</h2>
+    <div class="slideshow">
+    <div class="artist fade">
       <img src="assets/images/artist1.jpg" alt="Artist 1">
       <h3> Snoop Dogg</h3>
     </div>
-    <div class="artist">
+    <div class="artist fade">
       <img src="assets/images/artist2.jpg" alt="Artist 2">
       <h3>Taylor Swift</h3>
     </div>
-    <div class="artist">
+    <div class="artist fade">
       <img src="assets/images/artist3.jpeg" alt="Artist 3">
       <h3>Kiyo</h3>
     </div>
-    <div class="artist">
+    <div class="artist fade">
       <img src="assets/images/artist4.jfif" alt="Artist 4">
       <h3>Yoasobi</h3>
     </div>
-    <div class="artist">
+    <div class="artist fade">
       <img src="assets/images/artist5.jfif" alt="Artist 5">
       <h3>Coldplay</h3>
     </div>
-    <div class="artist">
+    <div class="artist fade">
       <img src="assets/images/artist6.jfif" alt="Artist 6">
       <h3>Zack Tabudlo</h3>
     </div>
-    <div class="artist">
+    <div class="artist fade">
       <img src="assets/images/artist7.jpeg" alt="Artist 7">
       <h3>Phum Viphurit</h3>
     </div>
-    <div class="artist">
+    <div class="artist fade">
       <img src="assets/images/artist8.jfif" alt="Artist 8">
       <h3>NIKI</h3>
     </div>
+    </div>
 
       <h2>Play Music Videos</h2>
-    <div class="song-playing">
+    <div class="song-playing" id="videos">
       <div class="song-playing-container">
-        <video src="assets/mv1.mp4" controls></video>
+        <video id = "vid1" src="assets/video/mv1.mp4" controls></video>
         <div class="song-details">
           <h2>Super Shy</h2>
           <div class="song-details-inner">
@@ -155,8 +168,8 @@
           </div>
         </div>
       </div>
-      <div class="song-playing-container">
-        <video src="assets/mv2.mp4" controls></video>
+      <div class="song-playing-container" id="videos">
+        <video src="assets/video/mv2.mp4" controls></video>
         <div class="song-details">
           <h2>golden hour</h2>
           <div class="song-details-inner">
@@ -168,44 +181,122 @@
     </div>
   
   <footer>
-    &copy; 2023 Free Music. All rights reserved.
+    &copy; 2023 CIT 236. Si Brow ay walang talento sa UI Design
   </footer>
   <script>
-    var music1 = new Audio();
-    music1.src = "assets/songs/song1.m4a";
+    var audio1 = document.querySelector('#aud1');
+    var audio2 = document.querySelector('#aud2');
+    var audio3 = document.querySelector('#aud3');
+    var audio4 = document.querySelector('#aud4');
+    var audio5 = document.querySelector('#aud5');
+    var audio6 = document.querySelector('#aud6');
+    var audio7 = document.querySelector('#aud7');
+    var audio8 = document.querySelector('#aud8');
+    var audio9 = document.querySelector('#aud9');
+    var audio10 = document.querySelector('#aud10');
+    var audio11 = document.querySelector('#aud11');
+    var audio12 = document.querySelector('#aud12');
+    
+    var all = document.querySelectorAll('audio');
 
-    var music2 = new Audio();
-    music2.src = "assets/songs/song2.m4a";
+    function stopAllAudio(){
+      all.forEach(function(audio){
+        audio.pause();
+      });
+    }
 
-    var music3 = new Audio();
-    music3.src = "assets/songs/song3.m4a";
+    document.querySelector('#play1').addEventListener('click',function(){
+      stopAllAudio();
+      audio1.play();
+    })
 
-    var music4 = new Audio();
-    music4.src = "assets/songs/song4.m4a";
+    document.querySelector('#play2').addEventListener('click',function(){
+      stopAllAudio();
+      audio2.play();
+    })
 
-    var music5 = new Audio();
-    music5.src = "assets/songs/song5.m4a";
+    document.querySelector('#play3').addEventListener('click',function(){
+      stopAllAudio();
+      audio3.play();
+    })
 
-    var music6 = new Audio();
-    music6.src = "assets/songs/song6.m4a";
+    document.querySelector('#play4').addEventListener('click',function(){
+      stopAllAudio();
+      audio4.play();
+    })
 
-    var music7 = new Audio();
-    music7.src = "assets/songs/song7.m4a";
+    document.querySelector('#play5').addEventListener('click',function(){
+      stopAllAudio();
+      audio5.play();
+    })
 
-    var music8 = new Audio();
-    music8.src = "assets/songs/song8.m4a";
+    document.querySelector('#play6').addEventListener('click',function(){
+      stopAllAudio();
+      audio6.play();
+    })
 
-    var music9 = new Audio();
-    music9.src = "assets/songs/song9.m4a";
+    document.querySelector('#play7').addEventListener('click',function(){
+      stopAllAudio();
+      audio7.play();
+    })
 
-    var music10 = new Audio();
-    music10.src = "assets/songs/song10.m4a";
+    document.querySelector('#play8').addEventListener('click',function(){
+      stopAllAudio();
+      audio8.play();
+    })
 
-    var music11 = new Audio();
-    music11.src = "assets/songs/song11.m4a";
+    document.querySelector('#play9').addEventListener('click',function(){
+      stopAllAudio();
+      audio9.play();
+    })
 
-    var music12 = new Audio();
-    music12.src = "assets/songs/song12.m4a";
+    document.querySelector('#play10').addEventListener('click',function(){
+      stopAllAudio();
+      audio10.play();
+    })
+
+    document.querySelector('#play11').addEventListener('click',function(){
+      stopAllAudio();
+      audio11.play();
+    })
+
+    document.querySelector('#play12').addEventListener('click',function(){
+      stopAllAudio();
+      audio12.play();
+    })
+    
+    window.addEventListener('load', function(event){
+      document.querySelectorAll('#videos video').forEach((video) =>{
+        video.onplay = function(event){
+          event.preventDefault();
+          document.querySelectorAll('#videos video').forEach((playing) =>{
+            if (video === playing)
+              playing.play();
+            else
+              playing.pause();
+          }); 
+        }
+      });
+    });
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides(){
+      let i;
+      let slides = document.getElementsByClassName("artist");
+
+      for (i=0; i<slides.length;i++){
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+
+      if (slideIndex>slides.length){slideIndex = 1}
+
+      slides[slideIndex-1].style.display = "block";
+
+      setTimeout(showSlides, 3500);
+    }
   </script>
 </body>
 </html>
