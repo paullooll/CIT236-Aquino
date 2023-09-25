@@ -1,5 +1,5 @@
 /* Reset default margin and padding */
-body, h1, h2, h3, p, {
+body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -155,15 +155,20 @@ h2 {
   border-radius: 50%;
 }
 
+.slideshow{
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
 .artist {
-  display: inline-block;
+  display: none;
   margin: 2%;
-  margin-left: 100px;
   text-align: center;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  max-width: 300px;
+  max-width: 500px;
   padding: 2rem;
   background-color: #808080;
   border-radius: 5%;
@@ -176,8 +181,8 @@ h2 {
 .artist img {
   display: block;
   margin: 0 auto;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -191,6 +196,16 @@ h2 {
 .artist p {
   color: #888;
   margin-top: 10px;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade{
+  from{opacity: .4}
+  to{opacity: 1}
 }
 
 footer {
@@ -241,13 +256,20 @@ footer {
   }
 
   .song-playing-container {
-      flex-direction: column;
-      align-items: center;
+    display: grid;
   }
 
   .song-playing video {
       width: 100%;
       height: auto;
       margin-bottom: 20px;
+  }
+
+  .song-details h2{
+    font-size: 24px;
+  }
+
+  .song-details h3{
+    font-size: 18px;
   }
 }
