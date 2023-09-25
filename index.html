@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Music</title>
+  <title>Pekeng Spotify</title>
+  <link rel="icon" type="image/x-con" href="assets/images/icon.png">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -208,21 +209,25 @@
     document.querySelector('#play1').addEventListener('click',function(){
       stopAllAudio();
       audio1.play();
+      stop();
     })
 
     document.querySelector('#play2').addEventListener('click',function(){
       stopAllAudio();
       audio2.play();
+      stop();
     })
 
     document.querySelector('#play3').addEventListener('click',function(){
       stopAllAudio();
       audio3.play();
+      stop();
     })
 
     document.querySelector('#play4').addEventListener('click',function(){
       stopAllAudio();
       audio4.play();
+      stop();
     })
 
     document.querySelector('#play5').addEventListener('click',function(){
@@ -233,6 +238,7 @@
     document.querySelector('#play6').addEventListener('click',function(){
       stopAllAudio();
       audio6.play();
+      stop();
     })
 
     document.querySelector('#play7').addEventListener('click',function(){
@@ -243,35 +249,50 @@
     document.querySelector('#play8').addEventListener('click',function(){
       stopAllAudio();
       audio8.play();
+      stop();
     })
 
     document.querySelector('#play9').addEventListener('click',function(){
       stopAllAudio();
       audio9.play();
+      stop();
     })
 
     document.querySelector('#play10').addEventListener('click',function(){
       stopAllAudio();
       audio10.play();
+      stop();
     })
 
     document.querySelector('#play11').addEventListener('click',function(){
       stopAllAudio();
       audio11.play();
+      stop();
     })
 
     document.querySelector('#play12').addEventListener('click',function(){
       stopAllAudio();
       audio12.play();
+      stop();
     })
+
+    var vids = document.querySelectorAll('#videos video');
+    function stop(){
+      vids.forEach(function(video){
+        video.pause();
+      });
+    }
+
     
     window.addEventListener('load', function(event){
       document.querySelectorAll('#videos video').forEach((video) =>{
         video.onplay = function(event){
+          stopAllAudio();
           event.preventDefault();
           document.querySelectorAll('#videos video').forEach((playing) =>{
-            if (video === playing)
+            if (video === playing){
               playing.play();
+            }
             else
               playing.pause();
           }); 
